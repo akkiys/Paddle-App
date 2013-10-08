@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+  
+ 
+    <bean name="/Formsubmit.html"  class="com.webapp.action.Formsubmit" />
+    
+    <bean name="/ClientSignup.html"  class="com.webapp.action.client.ClientSignup" />
+    
+    <bean name="/SupplierSignup.html"  class="com.webapp.action.supplier.SupplierSignup" />
+    
+    <bean name="/Home.html"  class="com.webapp.action.LoginController" />
+    
+    <bean name="/Logout.html"  class="com.webapp.action.LogOutController" />
+        
+   
+    
+      <!--Supplier   -->
+    
+    <bean name="/HandShaking.html"  class="com.webapp.action.supplier.HandShaking" />
+    
+    <bean name="/SupplierUsers.html"  class="com.webapp.action.supplier.SupplierUsers" />
+    
+     <bean name="/Accountants.html"  class="com.webapp.action.supplier.Accountants" />
+     
+     <bean name="/AssignUsers.html"  class="com.webapp.action.supplier.AssignUsers" />
+     
+      <bean name="/SupplierJobs.html"  class="com.webapp.action.supplier.Jobs" />
+      
+       <bean name="/SupplierAddJob.html"  class="com.webapp.action.supplier.SupplierAddJob" />
+       
+        <bean name="/SuppierEditJob.html"  class="com.webapp.action.supplier.EditJob" />  
+       
+        <bean name="/SupplierUpdateJob.html"  class="com.webapp.action.supplier.SupplierUpdateJob" />
+     
+        <bean name="/AccountantTimeSheet.html"  class="com.webapp.action.supplier.AccountantTimeSheet" />
+     
+     
+     
+     
+     
+     <!--supplier internal page load  -->
+     
+     <bean name="/getAccountantListPageForPartner.html"  class="com.webapp.action.supplier.internalPage.GetAccountantListPageForPartner" />
+     
+     
+     
+     
+    
+    <!-- *************** Client *****************  -->
+    
+     <bean name="/ClientHandShaking.html"  class="com.webapp.action.client.HandShaking" />
+     
+     <bean name="/ClientUsers.html"  class="com.webapp.action.client.ClientUsers" />
+    
+     <bean name="/Partners.html"  class="com.webapp.action.client.Partners" />
+    
+      <bean name="/ClientJobs.html"  class="com.webapp.action.client.Jobs" />
+      
+      <bean name="/PartnerJobs.html"  class="com.webapp.action.client.PartnerJobs" />
+    
+      <bean name="/ClientAddJob.html"  class="com.webapp.action.client.ClientAddJob" />
+    
+     <bean name="/ClientEditJob.html"  class="com.webapp.action.client.ClientEditJob" />
+     
+       <bean name="/ClientUpdateJob.html"  class="com.webapp.action.client.ClientUpdateJob" />
+       
+       
+       
+       
+       <!-- CoverSheet & upload File  -->
+       
+     <bean name="/CoverSheet.html"  class="com.webapp.action.coversheet.CoverSheet" />
+       
+    
+     <bean name="/UploadFilesForJob.html"  class="com.webapp.action.upload.UploadFilesForJob" />
+    
+    
+     <bean name="/UpdateCoverJob.html"  class="com.webapp.action.coversheet.UpdateCoverJob" />
+    
+    
+    
+    
+    <bean id="viewResolver"
+    	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+        <property name="prefix">
+            <value>/pages/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+ 
+</beans>

@@ -1,0 +1,19 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+ 
+<dwr>
+<allow>
+ <create creator="new" javascript="SupplierDWR">
+      <param name="class" value="com.webapp.dwr.SupplierDWR"/>      
+ </create>
+ <convert converter="bean" match="com.webapp.beans.SupplierBeans" /> 
+ <convert converter="bean" match="com.webapp.beans.TimeSheetBeans" /> 
+ 
+ 
+  <create creator="new" javascript="ClientDWR">
+      <param name="class" value="com.webapp.dwr.ClientDWR"/>      
+ </create>
+ <convert converter="bean" match="com.webapp.beans.ClientBeans" /> 
+ </allow>
+</dwr>
